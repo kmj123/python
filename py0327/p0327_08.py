@@ -43,3 +43,5 @@ if in_num in num:
     print("{} 숫자가 있습니다".format(in_num))
 else:
     print("{} 숫자가 없습니다.".format(in_num)) 
+    
+    
