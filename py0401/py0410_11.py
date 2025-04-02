@@ -30,7 +30,7 @@ while True:
         avg = total/3
         rank = 0
         
-        students.append("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(*title))
+        students.append({"no":no,"name":name,"kor":kor,"eng":eng,"math":math,"total":total,"avg":avg,"rank":rank})
         print(f"{name} 학생이 등록되었습니다.")
         print()
         
@@ -38,15 +38,14 @@ while True:
         
     elif choice == 2:
         print("[  학생성적 출력  ]")
-        print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(*title))
+        print("{}\t{}\t{}\t{}\t{}\`t{}\t{}\t{}".format(*title))
         print("-"*45)
-        print()
         for s in students:
-            print("{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}".format(*s))
-            print()
-        
+            print(f"{s['no']}\t{s['name']}\t{s['kor']}\t{s['eng']}\t{s['math']}\t{s['total']}\t{s['avg']}\t{s['rank']}")
+
     elif choice == 3:
         print("프로그램을 종료합니다.")
+        break
 
         
 
