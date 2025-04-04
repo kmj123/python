@@ -1,6 +1,4 @@
 
-
-
 students = [
     {"no":1,"name":"홍길동","kor":100,"eng":100,"math":100,"total":300,"avg":100.0,"rank":1},
     {"no":2,"name":"유관순","kor":100,"eng":100,"math":99,"total":299,"avg":99.67,"rank":2},
@@ -26,24 +24,35 @@ while True:
             no = count
             name = input(f"{no}번 학생의 이름을 입력해주세요>>")
             
-            if name == 0:
             while True:
                 kor = int(input("국어점수>> "))
                 if 0 <= kor <= 100:
                     break
-                    else : print("0~100 사이의 숫자를 입력해주세요")
-                else: print("숫자만 가능합니다.")
+                else: 
+                    print("0~100 사이의 숫자를 입력해주세요")
+                    print("숫자만 가능합니다.")
                 
-            eng = int(input("영어점수>> "))
-            
-            
-            math = int(input("수학점수>> "))
+            while True:
+                eng = int(input("영어점수>> "))
+                if 0 <= eng <= 100:
+                    break
+                else: 
+                    print("0~100 사이의 숫자를 입력해주세요")
+                    print("숫자만 가능합니다.")
                 
-            
+            while True:
+                math = int(input("수학점수>> "))
+                if 0 <= math <= 100:
+                    break
+                else: 
+                    print("0~100 사이의 숫자를 입력해주세요")
+                    print("숫자만 가능합니다.")
+                
+        
             total = kor+eng+math
             avg = total/3
             rank = 0
-            
+        
             students.append({"no":no,"name":name,"kor":kor,"eng":eng,"math":math,"total":total,"avg":avg,"rank":rank})
             
             print(f"{no}번 {name}학생이 등록되었습니다.")
