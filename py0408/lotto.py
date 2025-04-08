@@ -62,7 +62,8 @@ while True:
                 if temp == 0:
                     print(f"{choice}는 입력한 번호입니다. 다시 입력해주세요")
                 if count >= 6:
-                    print()
+                    print("로또번호를 6개 모두 입력하셨습니다.")
+                    break
     
         
     elif choice == 3:
