@@ -1,7 +1,5 @@
 from stuModule import Student,Students
 from stuFunc import *
-students = Students()
-
 
 
 # 학생성적프로그램
@@ -13,6 +11,7 @@ while True:
         
     elif choice == 2:
         stu_output()   # 학생성적출력 함수
-
-
-
+    
+    elif choice == 3:
+        stu_modify()    # 학생성적수정 함수
+        

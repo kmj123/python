@@ -64,7 +64,7 @@ while True:
                 break
             
     elif choice ==3:
-        for i in lotto[6]:
+        for i in lotto[:6]:
             for j in my_lotto:
                 if i ==j: win_lotto.apend(i)
         

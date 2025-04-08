@@ -1,4 +1,4 @@
-#
+
 import random
 
 # 랜덤 1~45번까지 숫자 6개 ran_list 저장
