@@ -125,7 +125,7 @@ while True:
                 print()
                 break
         if temp == 0:
-            print(f"{name} 학생을 찾지 못했습니다. 다시 입력하세요.!!")   
+            print(f"{name} 학생을 찾지 못했습니다. 다시 입력하세요!")   
             print()
     
     elif choice == 7: # 학생성적저장
